@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Display User";
+}
+
+@model FormSubmission.Models.User
+
+
+<div class="text-center">
+    <h1 class="display-4">Successfully Registered!</h1>
+    <h2>Info:</h2>
+    <p>@ViewBag.User.FirstName @ViewBag.User.LastName</p>
+    <p>@ViewBag.Age</p>
+    <p>@ViewBag.User.Email</p>
+    <p>@ViewBag.User.Password</p>
+</div>

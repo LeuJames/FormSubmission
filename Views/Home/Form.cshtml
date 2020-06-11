@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Form";
+}
+
+@model User
+
+
+    <form asp-action="Create" asp-controller="Home" method="post" class="form-group">
+        <h1>Enter your information:</h1>
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+        <label asp-for="FirstName"></label>
+        <input class="form-control" asp-for="FirstName">
+
+        <span class="text-danger" asp-validation-for="LastName"></span>
+        <label asp-for="LastName"></label>
+        <input class="form-control" asp-for="LastName">
+        
+        <span class="text-danger" asp-validation-for="Age"></span>
+        <label asp-for="Age"></label>
+        <input class="form-control" asp-for="Age">
+
+        <span class="text-danger" asp-validation-for="Email"></span>
+        <label asp-for="Email"></label>
+        <input class="form-control" asp-for="Email">
+
+        <span class="text-danger" asp-validation-for="Password"></span>
+        <label asp-for="Password"></label>
+        <input class="form-control" asp-for="Password">
+
+        <input value="Submit" type="submit">    
+    </form>
